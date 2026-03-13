@@ -2,25 +2,19 @@
 body {
   font-family: 'Inter', Arial, sans-serif;
   margin: 0;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: #e6ebf1;
+  color: #1f2937;
   line-height: 1.6;
 }
 
 a {
-  color: #0070f3;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header */
 header {
-  background: #24292e;
+  background: linear-gradient(135deg, #1e293b, #3b82f6);
   color: white;
-  padding: 50px 20px 80px;
+  padding: 60px 20px 120px;
   text-align: center;
 }
 
@@ -28,8 +22,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 900px;
-  margin: 0 auto 20px;
+  max-width: 1100px;
+  margin: 0 auto 30px;
 }
 
 nav h1 {
@@ -39,7 +33,7 @@ nav h1 {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
@@ -47,107 +41,154 @@ nav h1 {
 .nav-links li a {
   color: white;
   font-weight: 600;
+  transition: 0.3s;
 }
 
+.nav-links li a:hover {
+  color: #facc15;
+}
+
+/* Hero */
 .hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #facc15;
+  color: #1f2937;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #f59e0b;
+  color: white;
 }
 
 /* Sections */
 main {
-  max-width: 1000px;
-  margin: -60px auto 0;
+  max-width: 1100px;
+  margin: -100px auto 0;
   padding: 0 20px;
 }
 
 section {
-  background: white;
-  padding: 40px 30px;
+  background: #ffffff;
+  padding: 50px 30px;
   margin: 40px 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
 }
 
 section h2 {
   margin-top: 0;
-  color: #24292e;
+  color: #0f172a;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* Projects */
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
 .project-card {
-  background: #f8f9fa;
-  padding: 20px;
+  background: #f1f5f9;
+  padding: 25px;
   flex: 1 1 300px;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
 }
 
 .project-card img {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 15px;
 }
 
-/* Achievements */
-#achievements ul {
-  list-style-type: disc;
-  padding-left: 20px;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.project-button:hover {
+  background-color: #1e40af;
 }
 
 /* Resume */
 .resume-button {
   display: inline-block;
-  background-color: #0070f3;
+  background-color: #3b82f6;
   color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
+  padding: 15px 30px;
+  border-radius: 12px;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 15px;
+  transition: 0.3s;
 }
 
 .resume-button:hover {
-  background-color: #005bb5;
+  background-color: #1e40af;
 }
 
 /* Contact */
 .social-links {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
+.social-links a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #e2e8f0;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #3b82f6;
+  color: white;
+}
+
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  color: #888;
+  padding: 25px;
+  color: #64748b;
   font-size: 0.9rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #cbd5e1;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
   .project-list {
@@ -155,6 +196,6 @@ footer {
   }
 
   section {
-    width: 90%;
+    width: 95%;
   }
 }
